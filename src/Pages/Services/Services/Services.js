@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAmbulance } from "@fortawesome/free-solid-svg-icons";
 import { faTint } from "@fortawesome/free-solid-svg-icons";
 import { faCalendarCheck } from "@fortawesome/free-solid-svg-icons";
+import { NavLink } from "react-router-dom";
 
 const Services = () => {
   return (
@@ -19,7 +20,9 @@ const Services = () => {
               />
             </Col>
             <Col xs={8} md={8}>
-              <h4 style={{ color: "#1A5276" }}>Ambulance</h4>
+              <NavLink style={{ textDecoration: "none" }} to="/ambulance">
+                <h4 style={{ color: "#1A5276" }}>Ambulance</h4>
+              </NavLink>
             </Col>
           </Row>
         </Col>
@@ -33,7 +36,9 @@ const Services = () => {
               />
             </Col>
             <Col xs={8} md={8}>
-              <h4 style={{ color: "#1A5276" }}>Blood Donation</h4>
+              <NavLink style={{ textDecoration: "none" }} to="/blood-donation">
+                <h4 style={{ color: "#1A5276" }}>Blood Donation</h4>
+              </NavLink>
             </Col>
           </Row>
         </Col>
@@ -47,7 +52,9 @@ const Services = () => {
               />
             </Col>
             <Col xs={8} md={8}>
-              <h4 style={{ color: "#1A5276" }}>Appointment</h4>
+              <NavLink style={{ textDecoration: "none" }} to="/appointment">
+                <h4 style={{ color: "#1A5276" }}>Appointment</h4>
+              </NavLink>
             </Col>
           </Row>
         </Col>
